@@ -1,0 +1,7 @@
+{
+  "name": "fgsw",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
