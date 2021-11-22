@@ -8,27 +8,28 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'breeds',
+        loadChildren: () => import('../pages/breeds/breeds.module').then(m => m.BreedsPageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'breed',
+        loadChildren: () => import('../pages/breed/breed.module').then(m => m.BreedPageModule)
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: 'random',
+        loadChildren: () => import('../pages/random/random.module').then(m => m.RandomPageModule)
       },
+      
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/breeds',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/breeds',
     pathMatch: 'full'
   }
 ];

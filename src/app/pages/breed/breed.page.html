@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="color: black;background-color: forestgreen;">SUB-RAZAS</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-card>
+  <img src="assets/img/2.png"/>
+</ion-card>
+
+  <ion-content>
+     <app-list [obtenApi] = "breed" [icon] = "iconname"></app-list>
+     <!--<ion-grid>
+      <ion-row>
+        <ion-col size = "12" size-md = "6" size-lg = "4" *ngFor = "let item of breed?.message " >
+          <ion-list>
+           <ion-item>
+             <ion-label>{{item}}</ion-label>
+           </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-grid>-->
+    </ion-content>

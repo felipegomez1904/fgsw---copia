@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="color: black;background-color: forestgreen;">IMAGEN P</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of random?.message">
+      <ion-thumbnail slot="start">
+        <ion-img [src]="item"></ion-img>
+      </ion-thumbnail>
+      <ion-label>{{item.message}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
